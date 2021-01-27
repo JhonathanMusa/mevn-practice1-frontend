@@ -3,18 +3,18 @@
     <table class="table">
       <thead>
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Nombre</th>
-          <th scope="col">Descripción</th>
+          <th scope="col">Nota</th>
+          <th scope="col">Descripcion</th>
           <th scope="col">Fecha</th>
           <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="(item, index) in notas" :key="index">
-          <th scope="row">{{ item._id }}</th>
           <td>{{ item.nombre }}</td>
-          <td>{{ item.descripcion }}</td>
+          <td>{{ item.nota }}</td>
+          <td>{{ item.descripcion.toUpperCase() }}</td>
           <td>{{ item.date }}</td>
           <td>
             <b-button
